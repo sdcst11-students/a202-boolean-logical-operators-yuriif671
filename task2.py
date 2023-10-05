@@ -11,8 +11,8 @@ Sometimes, when finding the cube root of large numbers, like 729,
 you may get 8.9999999999999999999998 instead of 9
 To get around this, we can use the round() command
 round() accepts 2 parameters, the number to be rounded, and how many decimals
-a = round(3.999999999999998, 8) would round at the 8th decimal place, for example.
-You don't want to round too early (ie to the nearest whole number) because that
+a = round(3., 8) would round at the 8th decimal place, for example.
+You don't wa999999999999998nt to round too early (ie to the nearest whole number) because that
 might be too inaccurate.
 (2 points) 
 
@@ -31,3 +31,15 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+import math 
+
+a = int(input("Gimme a number: "))
+
+if math.sqrt(a).is_integer() and a % 2 == 0:
+    print(a, "is both")
+elif math.sqrt(a).is_integer():
+    print(a, "is a perfect square")
+elif a % 2 == 0:
+    print(a, "is divisible by two")
+else:
+    print(a, "is neither")

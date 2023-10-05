@@ -1,7 +1,8 @@
 #!python3
 
 gasTankLevel = 1
-if gasTankLevel == 0
+
+if gasTankLevel == 0:
     print("The tank is empty")
-else
+else:
     print("The tanks is not empty")

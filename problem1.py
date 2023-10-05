@@ -26,3 +26,9 @@ Enter a number: 16
 16 is not frue
 """
 
+a = int(input("Gimme a number: "))
+
+if a % 6 == 0:
+    print(a, " True")
+elif a % 8 == 0: 
+    print(a, " is not True")

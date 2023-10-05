@@ -30,3 +30,14 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+a = int(input("Gimme a number: "))
+b = int(input("Gimme a number: "))
+c = int(input("Gimme a number: "))
+
+a, b, c = sorted([a, b, c])
+print(a, b, c)
+
+if (a**2 + b**2 == c**2):
+    print(a, b, c, "form a Pythogorean triple")
+else:
+    print(a, b, c, "do not form a Pythogorean triple")
